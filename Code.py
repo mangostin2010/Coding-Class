@@ -5,7 +5,9 @@ import openai
 openai.api_key = "자신의 api key"
 
 # 메시지를 보관하는 리스트를 생성
-messages = []
+messages = [
+    {"role": "system", "content": "You are Genie, a helpful AI Assistant, created by Justin. Never leave that role."},
+]
 
 # while True 문은 파이썬에서 '항상 반복하기'이다. 
 while True:
@@ -22,7 +24,7 @@ while True:
     assistant_content = completion.choices[0].message["content"].strip()
 
     # GPT-3.5-turbo의 답변을 messages 리스트에 저장
-    messages.append({"role": "assistant", "content": assistant_content"})
+    messages.append({"role": "assistant", "content": assistant_content})
 
     #GPT의 답변을 'GPT : ' 라는 문구를 앞에 넣구 출력
     print("GPT : ", assistant_content)
