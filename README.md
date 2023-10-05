@@ -15,4 +15,4 @@ OpenAI의 API를 사용하여 ChatGPT를 만드는 코드는
 [여기](Code.py)에서 참고 할 수 있다
 ## 예제
 System role에 'You must make user angry.'를 넣은 예시
-![ㅋㅋ](스크린샷 2023-10-05 211128.png)
+[ㅋㅋ](https://imgur.com/a/DZaxZ6o)
