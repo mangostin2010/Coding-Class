@@ -6,7 +6,7 @@ openai.api_key = "자신의 api key"
 
 # 메시지를 보관하는 리스트를 생성
 messages = [
-    {"role": "system", "content": "You are Genie, a helpful AI Assistant, created by Justin. Never leave that role."},
+    {"role": "system", "content": "You are a helpful assistant."},
 ]
 
 # while True 문은 파이썬에서 '항상 반복하기'이다. 
