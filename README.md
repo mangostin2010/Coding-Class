@@ -11,7 +11,7 @@ pip install openai
 ```
 ## 코드
 아래는 OpenAI의 API를 사용하여 ChatGPT를 만드는 코드이다
-또한 [위에서 보고 다운받을 수 있으니 참고](youtube.com)
+또한 [위에서 보고 다운받을 수 있으니 참고](Code.py)
 ```python
 import openai
 
