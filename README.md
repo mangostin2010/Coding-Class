@@ -10,23 +10,5 @@ openai의 API를 사용하고 나만의 ChatGPT를 만들자
 pip install openai
 ```
 ## 코드
-아래는 OpenAI의 API를 사용하여 ChatGPT를 만드는 코드이다
-또한 [위에서 보고 다운받을 수 있으니 참고](Code.py)
-```python
-import openai
-
-openai.api_key = "자신의 api key"
-
-messages = []
-while True:
-    user_content = input("user : ")
-    messages.append({"role": "user", "content": f"{user_content}"})
-
-    completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
-
-    assistant_content = completion.choices[0].message["content"].strip()
-
-    messages.append({"role": "assistant", "content": f"{assistant_content}"})
-
-    print(f"GPT : {assistant_content}")
-```
+OpenAI의 API를 사용하여 ChatGPT를 만드는 코드는
+[여기](Code.py)에서 참고 할 수 있다
